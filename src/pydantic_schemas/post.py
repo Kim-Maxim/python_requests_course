@@ -1,5 +1,6 @@
 from pydantic import BaseModel, field_validator, Field
 
+
 class Post(BaseModel):
     # id: int
     id: int = Field(le=3)
