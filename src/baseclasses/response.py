@@ -1,7 +1,3 @@
-from jsonschema import validate
-from src.enums.global_enums import GlobalErrorMessages
-
-
 class Response:
 
     def __init__(self, response):
@@ -13,10 +9,8 @@ class Response:
         if isinstance(self.response_json, list):
             for item in self.response_json:
                 schema.model_validate(item)
-                # validate(item, schema)
         else:
             schema.model_validate(self.response_json)
-            # validate(self.response_json, schema)
         return self
     
     def assert_status_code(self, status_code):
