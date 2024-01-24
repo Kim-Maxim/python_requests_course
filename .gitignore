@@ -1,3 +1,5 @@
 env
 __pycache__
 .pytest_cache
+/tests/__init__.py
+/enums/__pycache__
