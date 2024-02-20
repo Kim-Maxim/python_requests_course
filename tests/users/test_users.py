@@ -1,5 +1,6 @@
 from src.baseclasses.response import Response
 from src.schemas.user import User
+from src.generators.player import Player
 
 
 def test_getting_users_list(get_users):
