@@ -10,10 +10,10 @@ class BuilderBaseClass:
             temp = self.result
             for item in keys[:-1]:
                 if item not in temp.keys():
-                    temp[item]={}
+                    temp[item] = {}
                 temp = temp[item]
             temp[keys[-1]] = value
         return self
-    
+
     def build(self):
         return self.result
