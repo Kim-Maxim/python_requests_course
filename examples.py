@@ -1,7 +1,5 @@
 """
 Пример объекта на котором вы можете потренироваться, используя pydantic схемы.
-
-Example of object for training with pydantic schemas.
 """
 
 computer = {

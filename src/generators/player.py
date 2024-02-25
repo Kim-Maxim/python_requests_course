@@ -3,6 +3,10 @@ from src.enums.user_enums import StatusesForPlayer
 from src.baseclasses.builder import BuilderBaseClass
 
 
+"""
+Не совсем простенький генератор Player.
+"""
+
 class Player(BuilderBaseClass):
 
     def __init__(self):

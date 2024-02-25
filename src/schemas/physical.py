@@ -1,6 +1,10 @@
 from pydantic import BaseModel, HttpUrl, UUID4
 from pydantic_extra_types.color import Color
 
+"""
+Пример описания pydantic model с нестандартными типами полей.
+Позже эта модель будет использована как часть другой модели.
+"""
 
 class Physical(BaseModel):
     color: Color

@@ -6,6 +6,11 @@ from pydantic_extra_types.payment import PaymentCardNumber
 from src.schemas.physical import Physical
 
 
+"""
+Именно в этом файле можно поиграться с уже готовой моделью и примером
+тестового объекта для неё (Human).
+"""
+
 class Owners(BaseModel):
     name: str
     card_number: PaymentCardNumber
